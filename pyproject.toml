@@ -1,0 +1,25 @@
+[project]
+name = "embedding-demos"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Florian Müller" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.37.10",
+    "docling>=2.26.0",
+    "jupyter>=1.1.1",
+    "jupyterlab>=4.3.5",
+    "matplotlib>=3.10.1",
+    "scikit-learn>=1.6.1",
+    "sentence-transformers>=3.4.1",
+]
+
+[project.scripts]
+embedding-demos = "embedding_demos:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
